@@ -30,7 +30,7 @@ input_char = input("What is your guess? ")
 # User-defined function
 
 
-def word_check():
+def word_check(input_char):
     """
     1. Make sure guess is a single letter
     2. if that letter is in words_list
@@ -50,11 +50,9 @@ while True:
             print(letter)  # 4
         else:
             print("Try again: ")  # 4
-            break
+    break
 
 
 # single_letter = 1  # 1
 if len(input_char) > 1:
     print("Only 1 character allowed!")
-
-word_check(input_char)
